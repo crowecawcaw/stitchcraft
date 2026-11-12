@@ -1,0 +1,1113 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Image to embroidery - StitchCraft</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="../favicon-8114d1fc.png">
+        <link rel="stylesheet" href="../css/variables-8adf115d.css">
+        <link rel="stylesheet" href="../css/general-e96d0476.css">
+        <link rel="stylesheet" href="../css/chrome-d279d366.css">
+        <link rel="stylesheet" href="../css/print-9e4910d8.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../fonts/fonts-9644e21d.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="../highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="../tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="../ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex-67915e2a.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc-fe9ba82e.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">StitchCraft</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+                        <a href="https://github.com/KaboomFox/stitchcraft" title="Git repository" aria-label="Git repository">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></span>
+                        </a>
+                        <a href="https://github.com/KaboomFox/stitchcraft/edit/main/docs/src/design/image-to-embroidery.md" title="Suggest an edit" aria-label="Suggest an edit" rel="edit">
+                            <span class=fa-svg id="git-edit-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M421.7 220.3l-11.3 11.3-22.6 22.6-205 205c-6.6 6.6-14.8 11.5-23.8 14.1L30.8 511c-8.4 2.5-17.5 .2-23.7-6.1S-1.5 489.7 1 481.2L38.7 353.1c2.6-9 7.5-17.2 14.1-23.8l205-205 22.6-22.6 11.3-11.3 33.9 33.9 62.1 62.1 33.9 33.9zM96 353.9l-9.3 9.3c-.9 .9-1.6 2.1-2 3.4l-25.3 86 86-25.3c1.3-.4 2.5-1.1 3.4-2l9.3-9.3H112c-8.8 0-16-7.2-16-16V353.9zM453.3 19.3l39.4 39.4c25 25 25 65.5 0 90.5l-14.5 14.5-22.6 22.6-11.3 11.3-33.9-33.9-62.1-62.1L314.3 67.7l11.3-11.3 22.6-22.6 14.5-14.5c25-25 65.5-25 90.5 0z"/></svg></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <h1 id="image-to-embroidery"><a class="header" href="#image-to-embroidery">Image to embroidery</a></h1>
+<!-- implements: crates/stitchcraft-engine/src/auto/**, apps/stitchcraft-cli/src/commands/palette.rs, apps/stitchcraft-cli/src/trace.rs -->
+<p>Automatic digitizing makes a design that sews well from a picture of flat colours, such as a logo, clip
+art or a drawing, once it is traced into shapes. Settings on the shapes are optional. StitchCraft chooses
+the stitches of each shape by its width at the size it sews. A colour drawn under others sews what shows of
+it, and neighbouring shapes overlap where they meet. Specks and the background are left out, and the
+sewing is ordered for few colour changes and short jumps. Milestone M13 of the <a href="../plan/roadmap.html">roadmap</a>
+builds it, after M7.5. Photographs sewn in blended colours need another technique, outside the roadmap.</p>
+<h2 id="the-flow"><a class="header" href="#the-flow">The flow</a></h2>
+<p>A picture becomes a machine file in 2 steps:</p>
+<ol>
+<li>In VectorCraft, place the picture, scale it to the size it will sew, and trace it with Object › Image
+Trace › Make.</li>
+<li>Run <code>stitch export picture.vectorcraft --auto -o picture.pes --preview picture.png</code>.</li>
+</ol>
+<p>With VectorCraft installed, <code>stitch export picture.png -o picture.pes</code> takes both steps itself
+(<a href="#pictures-from-the-command-line">below</a>).</p>
+<p>An Image Trace object is a group of the traced paths, with the source image hidden beside them
+(<code>imageTrace.make</code> in VectorCraft’s <code>crates/engine</code>, <code>main</code> at <code>0842941</code>). <code>stitch export</code> already reads
+those paths, and Expand is optional. Without <code>--auto</code> it sews each of them as Ink/Stitch sews an SVG
+shape: every area as a tatami fill and every line as a running stitch, in paint order. In a test document
+of a traced square and a strip 2.1 mm wide beside it, both sewed as tatami fills. With <code>--auto</code>, each
+shape sews as this page describes. Once MC-8 confirms the rules on the machine, M13.8 makes automatic
+digitizing the default for VectorCraft documents, and <code>--auto</code> is then needed for SVG files only.</p>
+<p>VectorCraft’s exporter plug-ins (<a href="rfc-vectorcraft-abi-v2.html#p1-exporter-plug-ins">P1</a>, 0.14) move the second
+step into VectorCraft, as File › Export › Export As › PES, which StitchCraft’s formats are exporters for since
+M6.9. Their <code>auto</code> option is <code>--auto</code>. Since M13.7, StitchCraft’s Auto effect on the traced group says it in
+the document itself, with the rules’ settings in its dialog, and previews each path’s stitches: the
+document then sews digitized automatically from either step, without the switch.</p>
+<p>An SVG file traced elsewhere, such as by Inkscape’s Trace Bitmap, sews the same way with
+<code>stitch plan picture.svg --auto</code>. Without the switch, an SVG file’s shapes sew as Ink/Stitch sews them,
+since the file may be one of Ink/Stitch’s.</p>
+<h2 id="what-vectorcraft-does-and-what-stitchcraft-does"><a class="header" href="#what-vectorcraft-does-and-what-stitchcraft-does">What VectorCraft does and what StitchCraft does</a></h2>
+<p>The 2 programs split the work. VectorCraft’s Image Trace (its <code>crates/trace</code>) already does what a picture
+needs before it is embroidered:</p>
+<ul>
+<li>Its colour modes reduce the picture to a few flat colours. Its Document Library palette traces with a
+swatch library’s colours exactly.</li>
+<li>Its Noise setting leaves out areas smaller than a number of pixels, and Ignore White leaves out white
+areas.</li>
+<li>Its Abutting method traces each colour’s areas as paths that share their edges with their neighbours.</li>
+<li>Create Strokes traces lines up to its Stroke width as stroked centre lines.</li>
+<li>The paths are smooth curves over the steps of the pixels.</li>
+</ul>
+<p>StitchCraft links none of VectorCraft’s crates (<a href="vectorcraft-integration.html">integration</a>), and a tracer of
+its own would repeat VectorCraft’s. StitchCraft does the embroidery. It chooses the stitches of each shape,
+the overlaps between shapes and the order they sew in.</p>
+<p><code>stitch palette</code> (M13.7) writes a machine profile’s thread palette as a GIMP palette file (<code>.gpl</code>).
+VectorCraft loads that file as a swatch library (Window › Swatch Libraries › Other Library…), and Image
+Trace’s Document Library palette then traces the picture in the threads’ colours.</p>
+<h2 id="automatic-elements"><a class="header" href="#automatic-elements">Automatic elements</a></h2>
+<p>An automatic element is a shape whose stitches StitchCraft chooses. The readers make one of:</p>
+<ul>
+<li>each object of a VectorCraft document that has no StitchCraft effect, with <code>--auto</code>;</li>
+<li>each path with the StitchCraft Auto effect, on the path itself or on a group or a layer around it, with
+or without <code>--auto</code> (M13.7, <code>REQ-VC-016</code>). A path nearer to a StitchCraft stitch effect, its own or a
+group’s, sews as that says. The effect’s parameters are the shape’s settings of the rules
+(<a href="#settings">below</a>). A stitch effect says how an object sews, so an Auto effect beside one isn’t used,
+and <code>SC-W0807</code> says so;</li>
+<li>each SVG element without <code>inkstitch:</code> settings, with <code>--auto</code>.</li>
+</ul>
+<p>An element with settings is not digitized automatically, whether or not the switch is given: it sews as
+its settings say, as far as its reader reads them. So a picture can be digitized automatically and one of
+its shapes then set by hand. A shape’s fill gives its area and its stroke gives its line, each with its
+thread, width, join and cap, as for any element. A trim or a stop that an Ink/Stitch command asks for is
+not a setting of the stitches, and an automatic element keeps it. An element sewn as several elements
+keeps it for the last of them. Start and end positions, from Ink/Stitch’s commands or VectorCraft’s
+markers, and a target point, are not kept: automatic digitizing places where its parts start and end, and
+the readers say the commands and markers aren’t used (<code>REQ-GEN-001</code>). The elements it makes have none. An
+automatic element’s clip paths are applied before it is digitized, where an ordinary element’s are
+applied as it is generated: the shape digitized is what its clips leave of it, and its columns follow
+what shows (<code>REQ-GEN-005</code>, <code>auto/clips.rs</code>). A line’s cut end takes the line’s cap. A shape wholly
+outside its clips is left out (<code>SC-W0013</code>).</p>
+<p>The readers mark the element (<code>Element::automatic</code>), and they read the switch from <code>Reading</code>, which every
+host takes. Before anything is generated, the engine turns each automatic element into ordinary elements
+whose settings say what to sew (<code>stitchcraft_engine::auto</code>). The generators, the assembly and every host
+then treat them as shapes set by hand. <code>SC-I0901</code> counts the shapes digitized, by the stitches they sew
+as. An automatic line sewn across its width follows the drawing, and the reader names what the drawing
+draws across the line that its stitches don’t follow (<code>REQ-AUTO-005</code>). Of a VectorCraft document, that is
+the line’s alignment inside or outside a closed path and its width profile (<code>SC-W0807</code>). Of an SVG file,
+it is transforms that stretch the line more one way than the other (<code>SC-W0802</code>). Under such transforms a
+viewer draws it wider one way, and its stitches are as wide as the transforms stretch it on average. Its caps are
+followed (below), and so are its corners, joined as the drawing joins them. An SVG join that is not set
+is SVG’s miter, limited by <code>stroke-miterlimit</code>, where Ink/Stitch reads a miter limited at 5.</p>
+<p>Digitizing doesn’t add an error of its own (<code>REQ-AUTO-006</code>). A part that its width’s stitches cannot sew
+is sewn otherwise, or left out with a warning, and a shape that paints nothing sews as it would without
+the switch. One odd shape among hundreds never keeps a design from being written.</p>
+<h2 id="stitch-types-by-width"><a class="header" href="#stitch-types-by-width">Stitch types by width</a></h2>
+<p>An automatic element is measured at the size it sews, in millimetres, to the micrometre (<code>REQ-AUTO-002</code>).
+A width written in another unit that converts to a bound give or take a rounding error, such as 7 mm in
+CSS pixels, is that bound. Its width at a place is the diameter of the largest circle that fits inside it
+there. Its parts sew by their width:</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Width</th><th>Sewn as</th></tr>
+</thead>
+<tbody>
+<tr><td>Up to the design’s <code>min_satin_stroke_width_mm</code>, 1 mm unless the design sets it</td><td>A running stitch along the centre line, a triple run (bean stitch) from 0.5 mm wide</td></tr>
+<tr><td>Wider, up to the widest satin column, 7 mm</td><td>Satin columns, whose rails are the outline</td></tr>
+<tr><td>Above 7 mm</td><td>A tatami fill</td></tr>
+</tbody>
+</table>
+</div>
+<p>A stroke is a line as wide as it is drawn (M13.1):</p>
+<ul>
+<li>
+<p>No wider than <code>min_satin_stroke_width_mm</code> it sews as a running stitch along its path (<code>REQ-AUTO-002</code>),
+tripled from 0.5 mm wide (below). A satin column that narrow is too narrow to stitch across
+(<code>REQ-SAT-015</code>), so the bound is the same.</p>
+</li>
+<li>
+<p>Up to 7 mm it sews as a satin column as wide as its stroke, with its path as the column’s centre line,
+as a satin column drawn as one path does (<code>REQ-SAT-016</code>, <code>REQ-AUTO-003</code>). A centre line is one subpath,
+so a stroke of several sews a column for each, in order. The second and later columns are named after
+the stroke with <code>#2</code>, <code>#3</code> and so on. A traced line’s ends are round or square, and its caps are part of
+the line drawn. An open end with a round or square cap reaches half the stroke’s width past the path’s
+end, straight on, as far as the cap does. A round cap’s end is then square, which covers its corners too.
+A column cannot follow a subpath that turns more tightly than the stroke is wide, such as a small ring
+traced from a dot. Nor can it follow a subpath shorter than a CSS pixel. Its rails would fold over
+themselves, or vanish. The rails the satin column would make tell whether it can follow a subpath. A
+subpath it cannot follow sews as the area it paints, filled as a wider line is (<code>SC-I0902</code>). So does a
+dot that a round or square cap draws. A dot with a butt cap draws nothing, and is left out (<code>SC-W0401</code>).</p>
+</li>
+<li>
+<p>Wider than that, the area it paints is filled (<code>REQ-AUTO-004</code>). That area is each segment widened by
+half the stroke’s width to each side, with its corners joined as the stroke’s join joins them and its
+open ends capped with its cap. It is the stroke’s area within the shapes’ tolerance. A miter longer
+than its limit is cut square. Those pieces, joined into one area, are the fill’s outline. A part of it smaller than 1 mm²
+is a speck, merged into a neighbour or left out as specks are (<a href="#neighbours">Neighbours</a>). An area that would reach more
+than 10 m from the origin is left out (<code>SC-W0903</code>). No design lies there.</p>
+<p>The pieces are not handed to the area code one by one, which would cost many times the work of their
+outline. Each open subpath is one ring instead. It follows the right side forward, the end cap, the left
+side back and the start cap. The outer side goes round each join, and the inner side goes in to the
+path’s point and out again. A closed subpath is 2 rings, one for each side. Such rings wind round each
+point as many times as the pieces cover it. The nonzero rule then fills exactly the pieces’ union. A line
+of more than 32 chords is cut into lengths of 32 chords. Each length is a ring made into its area alone,
+and the areas are then joined. A 10 mm line a metre long fills within the default budget that way.</p>
+</li>
+</ul>
+<p><strong>Triple runs</strong> (M13.4, <code>REQ-AUTO-015</code>). A running stitch that automatic digitizing makes is a triple run
+from 0.5 mm wide: each stitch is sewn 3 times, bean stitch 1. A running stitch sewn once is as fine as the
+thread, and a line drawn half a millimetre wide or wider sews bolder tripled. A stroke is as wide as it is
+drawn, and a narrow part (below) as wide as the circles that fit inside it along the middle. Widths are
+compared to the micrometre, and MC-8 confirms or changes the bound.</p>
+<p>Every automatic satin column, a stroke’s as well as a shape’s, has the settings of its width (M13.5,
+<a href="#settings-by-width">below</a>). A shape’s area is a tatami fill apart from its narrow parts (M13.4), its
+parts as wide as a satin column (M13.5) and the narrow parts of its broad ones (M13.6).</p>
+<p><strong>Narrow parts</strong> (M13.4, <code>REQ-AUTO-013</code>). A part of a shape that is narrower than
+<code>min_satin_stroke_width_mm</code> everywhere sews as a running stitch along its centre line, as a stroke that
+narrow does. No circle that wide fits inside such a part: shrunk by half the width with the polygon buffer
+of M5.7, nothing of it is left. The width is taken half a micrometre wider, so that a part as wide as the
+bound, give or take a rounding error, is narrow, as a stroke is. Before that, a part smaller than 1 mm² is a
+speck (<a href="#neighbours">Neighbours</a>), and stays in the area. So does a part whose centre line has no length, a
+dot.</p>
+<ul>
+<li><strong>What sews.</strong> The rest of the shape is a tatami fill, and each narrow part’s line sews after it, in the
+order of the parts. It is named after the shape with <code>#2</code>, <code>#3</code> and so on, or with the shape’s own name
+when nothing of it is filled. A trim or a stop after the shape follows its last part.</li>
+<li><strong>Its width.</strong> A part’s width at a point of its centre line is the diameter of the largest circle centred
+there that fits inside it. Averaged along the line, leaving out the piece that runs on into a tip’s
+corner, it says whether the part is a triple run
+(<a href="algorithms/centre-lines.html#width-along-the-line">centre lines</a>). A strip as wide all along as a stroke
+is as wide as the stroke.</li>
+<li><strong>To its neighbours</strong> a narrow part’s line paints the part. It sews after a fill it borders. An area
+sewn before it reaches under it, and is cut away under the part where the part covers it, as under an
+area (<a href="#neighbours">Neighbours</a>).</li>
+<li><strong>Once the layers are flattened.</strong> A shape’s parts are found in what it sews once the layers are
+flattened (<a href="#neighbours">Neighbours</a>): what shows of it, with the holes its details fill closed. A
+stacked trace’s dark outline under the colours inside it shows as a ring, and sews as lines and columns,
+as an abutting trace’s outline does. A broad area’s holes under its details are closed, so the strips of
+it between the details are part of its fill. The parts are found before specks merge and before each
+area reaches under its neighbours.</li>
+<li><code>SC-I0901</code> counts a shape whose every part runs as a running stitch, and any other as a tatami fill.
+Finding a part’s width and centre line is part of the work of digitizing its shape. A part whose width
+or centre line can’t be found, a bug, stays in the fill, and <code>SC-E0009</code> names its shape.</li>
+</ul>
+<p><strong>Parts as wide as a satin column</strong> (M13.5, <code>REQ-AUTO-016</code> to <code>REQ-AUTO-018</code>). Filled, a part as wide as a
+satin column sews rows no longer than it is wide wherever they cross it. A digitizer sews it as satin
+columns along its strips and round its rings. A part that isn’t narrow, and is nowhere wider than 7 mm, is
+as wide as a satin column. Shrunk by 3.5 mm, taken half a micrometre wider, nothing of it is left. Such a
+part sews a satin column along each of its centre lines, between its own outlines
+(<a href="algorithms/centre-lines.html#columns">centre lines</a>):</p>
+<ul>
+<li><strong>Its columns.</strong> Each line sews one column over the triangles round it. A line is cut where it turns by
+more than 60°, so that the column before a corner covers it and the one after ends under it, as an arm
+of a T ends under its bar. A branch of the line is a column of its own however short, as each arm of a
+t’s crossbar is. A branch to the second sharp corner of an end is a bump instead, sewn with the column
+beside it. So is a tooth, a step of a traced outline as narrow as the narrowest satin stroke somewhere
+and no longer than its junction is wide. A column of its own, it would sew a short line beside the column
+and cut that column in 2. A column’s rails are the part’s outline on either side, and its rungs lie
+square to it.</li>
+<li><strong>Their ends.</strong> A column that ends where another runs on ends under it: it sews first, and is 0.4 mm
+longer at that end, by its push compensation, so that no fabric shows where they meet. Otherwise a column
+ends at its farthest point along its line, flat along the end’s edge when that lies within 20° of square
+to the column, and at a point otherwise.</li>
+<li><strong>Their order.</strong> A column that ends under another sews before it. Then the longest sews first, and each
+next column is the one with an end nearest where the last one ended, sewn from that end. A ring starts
+at its rung nearest. Where the columns that end under each other go round, as a pinwheel’s bars do, the
+first in that order sews first, and the last ends on top of it.</li>
+<li><strong>Their width.</strong> A column is as wide as the circles that fit inside the part along its line, as a narrow
+part is, without the piece of its line into a tip’s corner. One no wider than the design’s narrowest
+satin stroke runs along its line as a triple run, unless the column is wider than that stroke somewhere
+along its line, but at its 2 ends, or reaches farther than that from its line beside it. Both are
+measured inside the column’s own outline, the triangles round its line. A running stitch covers a
+thread’s width along its line, so where the column is wider, the fabric beside the line shows unless an
+area sewn before it reaches under it. Measured on average alone, the strands of fur in the owner’s traced
+dog that widened at an end ran, and so did its small blobs, each beside other lines, and they left fabric
+bare. So did a column whose line ran along one side of a bump 1.4 mm across: the bump’s triangles were the
+column’s, far from its line. Where 2 strokes meet, the part is wider than either, by where
+the junction’s triangle has its corners. Measured inside the part, the circle at the junction of a T in
+strokes 0.9 mm wide was up to 1.13 mm, and the T’s bar sewed as a satin column one way round and as a
+triple run mirrored. A column’s own outline crosses to the other column there. A line’s end lies where it
+meets another line or runs into a corner, and measures that. On TS-13B, the outer legs of the M 4 mm
+tall, 0.81 mm wide on average, are 1.05 mm wide where the M’s middle strokes meet them, inside their own
+outlines, and sew as satin columns.</li>
+<li><strong>A dot.</strong> A part whose every line is shorter than half its width along it is a dot, and stays in the
+fill, as a part whose line has no length does. A disc or a square has no way to run, and its lines are
+only what its triangles leave of its middle. Its corners lie on one circle, where the triangulation
+ties, and how each tie breaks depends on where the part lies and how it is drawn. Without the rule, of 2
+dots alike one could sew a column across and the other a fill. A disc’s or a square’s lines are 0.4
+times as long as it is wide, and discs and squares no wider than a satin column are fills wherever they
+lie. A rectangle 3 mm wide is a column from 3.5 mm long.</li>
+<li><strong>What sews.</strong> The columns sew after the rest of the shape’s area, named as a narrow part’s lines are,
+and paint the part to its neighbours. <code>SC-I0901</code> counts a shape as satin columns when none of it is
+filled and one of its parts sews a satin column.</li>
+<li><strong>Drawn.</strong> Each column is drawn with its rails and rungs, as the Stroke to Satin filter draws one, and
+read back it must give them. A part whose triangles don’t make a column round one of its lines, or one
+of whose columns is read otherwise, stays in the fill, and <code>SC-I0902</code> says so. A rung added to tell a
+column’s rails from its rungs goes across an end that doesn’t reach under another column where one can
+take it (<a href="algorithms/satin.html#drawn-with-its-rails-and-rungs">satin columns</a>).</li>
+</ul>
+<p><strong>Shapes in parts</strong> (M13.6, <code>REQ-AUTO-019</code>). A shape wider than 7 mm in places and narrower in others sews
+in parts. Its broad parts are a tatami fill, and its narrow parts sew over the fill as lines and columns,
+as a digitizer sews a balloon’s string over the balloon:</p>
+<ul>
+<li><strong>Its broad parts</strong> are what an opening with a disc 7 mm across leaves: the shape shrunk by 3.5 mm and
+grown back by 3.5 mm, with the polygon buffer of M5.7, each taken half a micrometre wider, as the bound
+is. An opening finds them without the shape’s centre lines.</li>
+<li><strong>Its narrow parts</strong> are the rest of the shape, cut where they meet the broad parts. The opening rounds
+each convex corner of a broad part, and leaves the corner as a narrow part. A narrow part that reaches
+less than 1 mm² beyond 3.5 mm from the broad parts is such a corner, or a stub too short for a column,
+and stays in the fill, as a speck does. Length along its centre line tells no corner. The piece a
+square corner leaves has a horn along each side of the corner, and its centre line runs 6 mm along
+them, less than half a millimetre wide.</li>
+<li><strong>The cut.</strong> Where a narrow part meets a broad one, the opening leaves an arc, and a column would end
+there in a point at one of its corners. Each narrow part is cut square there instead, at a chord across
+it square to the way its sides run on, from the end of the arc that lies farther along that way. What
+lies past the chord goes to the fill. A column ends flat along the cut, however long it is, so that a
+star’s points end along the star’s middle. The triangles that touch the cut are the column’s end, and
+its line stops where they start (<a href="algorithms/centre-lines.html#columns">centre lines</a>).</li>
+<li><strong>What sews.</strong> Each narrow part sews as a part of its own. One narrower than
+<code>min_satin_stroke_width_mm</code> everywhere runs along its centre line, and one no wider than 7 mm sews as
+satin columns. Any other stays in the fill. The fill is the shape without its narrow parts. It sews
+first, and reaches 0.4 mm under the lines and columns sewn over it (<a href="#neighbours">Neighbours</a>).</li>
+</ul>
+<p><strong>Centre lines.</strong> A narrow part’s centre line, its width along it and the rungs across it come from a
+constrained Delaunay triangulation of its outline, with points added along its long edges so that no
+triangle is much longer than the part is wide:</p>
+<ul>
+<li>Each edge of a triangle that lies inside the part is a chord across it, as long as the part is wide
+there.</li>
+<li>A triangle with 2 inside edges is part of a strip, and its inside edges are the strip’s rungs.</li>
+<li>A triangle with 3 inside edges is a junction, where 3 strips meet, and one with 1 is an end.</li>
+</ul>
+<p>The centre line joins the middles of the chords (M13.4, <code>REQ-AUTO-014</code>). A round end stops it about half
+its width from the end, on its middle, and a sharp point draws it on to the point. The small bumps of a traced outline, and
+the corner past a sharp turn, would branch it, and are left out. A branch longer than its junction is
+wide is an arm, and has a line, as each arm of a small T’s bar has. At each junction left, the 2 branches that
+run on most nearly straight are one line and the third ends there, and a ring has a closed line. No piece
+of the line is sewn twice. A part’s lines sew one after another, the longest first, each from its end
+nearest where the last one ended. The <a href="algorithms/centre-lines.html">centre lines</a> page has the rules in
+full.</p>
+<p>A part as wide as a satin column sews a column along each of its lines (M13.5, above). Its rails are the
+part’s outline on either side, and its rungs come from the triangles across it. A junction joins the 2
+lines that run on most nearly straight, and the column of the third ends under theirs. A ring, such as a
+letter O, is a closed column between its outer and inner outlines. The satin generator sews these columns
+as it sews columns drawn with rails and rungs.</p>
+<h3 id="settings-by-width"><a class="header" href="#settings-by-width">Settings by width</a></h3>
+<p>Every automatic satin column, a stroke’s or a part’s, has the underlay of its width (<code>REQ-AUTO-018</code>),
+compared to the micrometre. These are starting values, and MC-8 confirms or changes them:</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Column width</th><th>Underlay</th></tr>
+</thead>
+<tbody>
+<tr><td>Below 2 mm</td><td>Centre walk</td></tr>
+<tr><td>2 to 4 mm</td><td>Contour</td></tr>
+<tr><td>Above 4 mm</td><td>Contour and zigzag</td></tr>
+</tbody>
+</table>
+</div>
+<p>A stroke’s column is as wide as the stroke, and a part’s as its width along its line. Each has a pull
+compensation of 0.4 mm, the overlap an area reaches under the shapes sewn after it: the thread pulls a
+column in from its rails as it pulls an area in from its edges, and stitches that reach that far past
+the rails meet the shapes beside them with no fabric between. A column ends at its rails’ ends rather
+than at the point nearest the next shape, which would join its ends to the next shape with a straight run
+across it. Fills keep the tatami fill’s defaults, underlay included.</p>
+<h2 id="neighbours"><a class="header" href="#neighbours">Neighbours</a></h2>
+<p>The shapes of a traced picture meet. VectorCraft’s Abutting method traces each area with a hole where the
+next one lies, and its Overlapping method, like Inkscape’s Trace Bitmap with its Stack option, traces each
+colour whole, over the colours under it. Sewn as drawn, either sews badly where shapes meet, and digitizing
+mends it in 4 steps, in this order (<code>stitchcraft_engine::auto::neighbours</code>, M13.2 and M13.12).</p>
+<ol>
+<li>
+<p><strong>Background</strong> (<code>REQ-AUTO-009</code>). The lowest shape is the picture’s background when it is an automatic
+area with a shape on another path drawn on it, and its outlines cover the box around the design to within
+0.5 mm of each side, its holes and notches aside. The box is the one around the defining points of every
+shape’s path, the background’s own included. So a disc in the corner of a square, lowest but covering
+less of the box, is part of the picture. A shape on its own path is the same object’s: the readers make a
+fill and its stroke 2 elements on one path, and a design of one shape with a stroke sews it. Where a
+shape of a tightly cropped picture touches its edge, the Abutting method cuts a notch in the background
+instead of a hole. A part of the box its outlines leave is a notch when the areas drawn on it fill it, to
+within twice the shapes’ tolerance, and it runs along the outlines at least as far as along the box’s
+sides, measured 0.5 mm inside them. A part that runs further along the sides is no notch. A disc or a
+rounded square that reaches the sides leaves such parts in its corners, and sews as the picture, though
+the shapes in its corners fill the rest. The cost of this rule is a background cut away along a whole
+side, by a bar down the side say, or cut in two by a band from side to side, which is sewn. The
+background is left out with <code>SC-W0906</code> before anything is digitized. With a StitchCraft effect, it sews
+as that effect says. Finding it has the work budget to itself, and a background that needs more is sewn,
+which <code>SC-W0906</code> says. What shows of the background inside the picture once the layers are flattened
+(step 2) is sewn: its parts that come no nearer than 0.5 mm to the box’s sides. A trace that stacks its
+colours draws the background whole under the picture, a white disc on a badge included, which a trace
+whose colours abut draws as a shape of its own. Such a part sews as the background’s own area, and
+<code>SC-W0906</code> counts it.</p>
+</li>
+<li>
+<p><strong>Layers</strong> (<code>REQ-AUTO-023</code>, M13.12). Digitized as drawn, a stacked colour’s stitches would be chosen for
+its whole shape, though most of it is hidden. Taken as it shows, a broad area with details on it splits
+into narrow columns between them, traced either way, as a flower’s middle does round its dots. A
+digitizer fills such an area whole and sews the details on top. So before anything is digitized, the
+layers are flattened, in 3 parts (<code>auto::neighbours::layers</code>).</p>
+<ul>
+<li><strong>What shows.</strong> The automatic areas drawn after an area are taken from it where they overlap it by
+more than twice the shapes’ tolerance, as the order measures an overlap (<a href="#sewing-order">Sewing
+order</a>). Rounding leaves hairlines where edges drawn as one meet, as round a disc drawn
+a hair larger than the disc on it. A part of what is left that is narrower than twice the shapes’
+tolerance everywhere, measured as a narrow part is, is such a hairline and is dropped. An area that
+they cover whole sews nothing (<code>SC-I0904</code>), and so does one of which only hairlines are left.</li>
+<li><strong>Details.</strong> Where what shows of an area is wider than its widest satin column somewhere
+(<code>auto_max_satin_width_mm</code>), the area is digitized whole under its details, the automatic areas that
+fill one of its holes. They fill the hole when what they leave of it is no wider than twice the shapes’
+tolerance, or smaller than the area’s smallest area. The hole is closed, and the area’s stitches are
+chosen by its width with the hole closed (<a href="#stitch-types-by-width">Stitch types by width</a>). An area,
+or a part of one, no wider than a satin column everywhere, such as a letter or an outline, keeps its
+holes, and the shapes in them sew beside it. Closed, it would be a broad fill under them. Specks in a
+hole aren’t details. When only specks fill a hole, the hole is left open, and the specks merge into the
+area round them (step 3), which closes it. A hole is filled from the parts whose boxes meet its own, and costs
+the work of those parts alone.</li>
+<li><strong>Moved back.</strong> The area sews before its details, so that they lie on it. It moves back in paint
+order past them, past the automatic areas whose part that shows doesn’t overlap it, and past the
+other shapes whose boxes don’t come within twice the shapes’ tolerance of its box. It never moves
+across a stop, nor when it has a stop after it. The areas move the largest first, so that an area
+moves before the areas inside it. Once all have moved, a hole whose details don’t all sew after its
+area is left open: sewn after them, the area would cover them. The area couldn’t move back past them,
+or another area that has one of them for a detail moved back past it. On a red square with a white
+ring on it and the red showing again as a bullseye in the ring’s hole, the ring moves back before the
+red, the bullseye being its detail, and the red’s hole is opened again round the ring.</li>
+</ul>
+<p>The overlaps (step 4) then cut the area away under its details, 0.4 mm inside their edges. So a trace
+that stacks its colours sews as one whose colours abut. An area whose region changed is given its new
+outline, and one whose region is what it was keeps its path as drawn. <code>SC-I0908</code> counts the areas that
+sew only what shows of them and those digitized whole under their details.</p>
+<p>Each area has the work budget to itself at each step of the flattening, and again when it is given
+what it sews. It costs a unit for each shape and each part it looks past, and the work of those near
+it. An area that needs more work for a step does without it. One that needs more to find what shows of
+it is sewn as it is drawn, in its place, but for the background, which is left out whole. The other
+areas’ holes are found without it. When finding an area’s details needs more work, its holes are kept
+open. When its move does, it keeps its place, and the holes whose details then sew before it are opened
+again. When giving it its region does, it is sewn as it is drawn, and isn’t counted as digitized whole.
+<code>SC-I0908</code> names each. <code>SC-E0009</code> names an area whose region the region code fails to join, a bug,
+which is treated the same way.</p>
+<p>The test pictures (<a href="#testing">Testing</a>) sew alike traced either way. An emblem 60 mm wide, a navy
+square with a white disc, a red star on the disc and 3 gold bars, on white, sews the same shapes with
+each thread. The navy square is one tatami fill of 1,848.5 mm², sewn first. The white disc is one fill
+of 380.7 mm², sewn after it: the disc’s 531 mm² less the star, which it reaches 0.4 mm under. The bars
+sew as satin columns 3.00 mm wide, as drawn, and the star as one fill. The stitches of the 2 traces
+differ by about 1 %, because the traces draw their colours in different orders. A button, a yellow disc
+24 mm across with 7 orange dots in a black rim 2.5 mm wide, sews the same shapes with each thread either
+way, and as many stitches, 1,925, 1,845 of them in the same places. Its yellow
+is one fill of 445.9 mm² under the dots, each dot a fill too, and its rim a satin column 2.50 mm wide.
+<code>tests/auto_pictures.rs</code> keeps the pictures sewing so.</p>
+</li>
+<li>
+<p><strong>Specks</strong> (<code>REQ-AUTO-008</code>). An automatic area, or a part of one, smaller than 1 mm² is too small to sew:
+it would sew a knot. It is merged into the automatic area it shares the longest edge with, which may be
+its own. A speck that fills a hole goes into the area around it, and no hole shows where it was. One that
+rounding left a hair from the rest of its own area rejoins that. On a tie, it goes into the area drawn
+first. The edge 2 shapes share is how much of the area’s rings lies within twice the shapes’ tolerance
+of the speck. A speck that doesn’t share an edge with an automatic area is left out, and so is one whose
+neighbours need more work to find than the budget allows it: put back as drawn, it could overlap a speck
+merged in beside it. <code>SC-I0905</code> names each speck, by its area rounded to a hundredth of a square millimetre and
+kept under 1 mm², and where it went. A line filled because it is too wide for a column (M13.1) is an area
+too, so a part of it that small is a speck.</p>
+</li>
+<li>
+<p><strong>Overlaps</strong> (<code>REQ-AUTO-007</code>). Pull draws stitches in from the edges of their shape, so shapes that only
+meet show fabric between them. Each automatic area reaches 0.4 mm under each area, satin
+column, filled line or part’s line or column sewn after it, from where it touches that shape, and no
+further than that shape.
+Shapes touch where their edges meet within twice the shapes’ tolerance, so a gap that rounding left
+between edges drawn as one closes too. Along an edge where a shape runs on near the area without
+touching it, the area doesn’t reach, and fabric shows between them as drawn. A satin column covers the
+area between its rails as they are sewn, turned to run the same way. Where an area or a part’s line or
+column sewn after the area covers part of it, as the details on an area digitized whole do, the area is
+cut away under that shape, 0.4 mm inside the shape’s edge, and that part is sewn once. Sewn whole, it
+would sew twice there, stiff and thick. A part of the area that such shapes cover whole sews nothing,
+however near their edge it lies. So does an area they cover whole. A trim or a stop after
+such an area has no place, as after any element that sews nothing (<code>SC-W0505</code>). <code>SC-I0901</code> counts only
+the shapes that sew. A part’s line or column covers its part, and isn’t cut away itself. It sews
+nothing when the areas, and the lines and columns of other shapes’ parts, sewn after it cover the part
+whole, and it sews whole when they cover the part in places. A satin column or a line digitized from a
+stroke and sewn after an area goes over it, and the area is sewn whole under it. Cutting a fill round
+small letters adds stitches and can leave gaps
+(<a href="https://inkscape.org/forums/embroidery/techniques-for-making-text-on-top-of-a-fill-more-crisp/">Inkscape forum</a>).
+<code>SC-I0904</code> counts the areas that reach under others and those cut away. It also names each area cut away
+whole, which sews nothing. The areas are named in the order they are sewn.</p>
+</li>
+</ol>
+<p>Only automatic areas change. A shape with settings is sewn as they say, and a satin column or a line
+digitized from a stroke or a part keeps its stitches: a column is sewn past its rails by its pull
+compensation, 0.4 mm, as an area is grown under the shapes sewn after it (<a href="#settings-by-width">Settings by
+width</a>). A fill that bounds no area is left to its fill, which says so.
+The areas are taken from the last sewn to the first, so that each meets the shapes after it as they are
+sewn. Each area has the work budget to itself for its specks and for its overlaps, and costs the work of the
+shapes near it and a unit for each other shape it looks past, not the work of the whole design: what a
+shape sewn after it paints is found once, with the work budget to itself. An area whose overlaps need more
+keeps the region it has, and a speck that needs more is left out. <code>SC-I0904</code> and <code>SC-I0905</code> say so. A satin
+column whose area needs more is not reached under, which <code>SC-I0904</code> says too. The regions are combined by
+one function, which cuts the rings of both where they meet and keeps the faces by their winding numbers
+(<code>normalize::region::ops</code>).</p>
+<p><strong>Measured.</strong> The test pictures (<a href="#testing">Testing</a>) are sewn as drawn, each shape a tatami fill, and
+digitized, and the edges where their shapes meet are measured with the thread pulled in by 0.4 mm, the
+pull the overlap is there to make up for: the share of the edges that the top stitches’ thread covers
+once each is pulled in where the thread turns (edge coverage, <code>stitchcraft_testkit::metrics</code>).</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Test picture</th><th>As drawn</th><th>Digitized</th><th>Stitches as drawn</th><th>Stitches digitized</th></tr>
+</thead>
+<tbody>
+<tr><td>Stripes, 3 abutting</td><td>98.9 %</td><td>100 %</td><td>2,994</td><td>3,221</td></tr>
+<tr><td>Badge, abutting</td><td>89.1 %</td><td>97.2 %</td><td>3,761</td><td>3,764</td></tr>
+<tr><td>Badge, stacked</td><td>100 %</td><td>97.2 %</td><td>3,981</td><td>3,764</td></tr>
+<tr><td>Badges in a row, abutting</td><td>94.2 %</td><td>99.9 %</td><td>4,947</td><td>4,867</td></tr>
+<tr><td>Badges in a row, stacked</td><td>100 %</td><td>99.9 %</td><td>4,872</td><td>4,867</td></tr>
+</tbody>
+</table>
+</div>
+<p>The abutting badge’s shapes, sewn as drawn, leave a tenth of their edges bare. Digitized, they overlap, and
+97.2 % is covered. The stripes’ edges are covered as drawn too, but by the running stitches the fills travel
+on along them, under their rows, not by the rows: digitized, the rows themselves overlap. The stacked badge as
+drawn sews its lower colours whole under the upper ones, which covers its edges with 217 more stitches,
+6 %, sewn twice. Digitized, it sews the abutting badge’s stitches, every one. The row of badges, each
+the badge at three fifths of its size and sewn in the order below, covers its edges as the badge does, and
+stacked it sews the abutting row’s stitches. Without pull, every edge is covered as drawn and
+digitized alike, to within a hundredth. <code>tests/auto_pictures.rs</code> keeps the numbers
+from falling back, and MC-8 tells whether 0.4 mm is the pull on the machine.</p>
+<h2 id="sewing-order"><a class="header" href="#sewing-order">Sewing order</a></h2>
+<p>Automatic elements sew in an order StitchCraft chooses (<code>stitchcraft_engine::auto::neighbours::order</code>,
+M13.3). The order is chosen after specks are merged, so that a speck merged into an area is no element of
+its own, and before areas reach under their neighbours, which follows it. VectorCraft’s Auto Grouping
+draws each shape together with the shapes inside it. Sewn in paint order, a picture traced with it changes
+thread at nearly every shape, and each change is a stop to rethread a home machine. The order comes from 4
+rules.</p>
+<ol>
+<li><strong>What overlaps keeps its paint order</strong> (<code>REQ-AUTO-010</code>). Of 2 shapes whose paint overlaps, the lower
+sews first, or it would cover the upper one. Paint order is the design’s, with each area digitized whole
+moved back before its details (<a href="#neighbours">Neighbours</a>). An area paints the region it sews once the
+layers are flattened, and a satin column the area between its rails as they are sewn. Lines paint the
+areas their strokes paint as drawn, and a part’s line or column the part. Shapes that only meet, as
+abutting paths do, may sew in either order. Rounding leaves a sliver no wider than twice the shapes’
+tolerance between edges drawn as one, and shapes overlap only where their overlap is wider. Where 2 lines
+0.1 mm wide cross, they overlap.</li>
+<li><strong>A line after the fill it borders.</strong> A satin column or a line that touches a fill without overlapping
+it sews after the fill and covers its edge, and the fill reaches under a column
+(<a href="#neighbours">Neighbours</a>). Rule 1 comes first. A line that rule 1 already sews before the fill, through
+the shapes it overlaps, keeps its place.</li>
+<li><strong>Few thread changes.</strong> The next element has the thread that is sewing, as long as an element of that
+thread is free to sew: every element that must sew before it has. Otherwise the thread changes to that
+of the first free element in paint order. Threads are the same when their colours are, as plan assembly
+counts thread changes. A PES file gives different colours different palette entries while they last
+(<code>REQ-THREAD-002</code>), so 2 colours are one thread to the machine only past the palette’s 64 entries. An
+element sewn in several threads (M10.5), as a tartan fill is and a gradient fill will be, moves as one.
+Its colours stay together, in the order its generator sews them. It has the thread sewing when the thread it
+starts in is, and leaves the thread it ends in sewing (<code>REQ-AUTO-024</code>). Its threads are read before it is
+generated, from its shape and settings.</li>
+<li><strong>The nearest next.</strong> Of the free elements of that thread, the next is the one whose box lies nearest
+the box of the element sewn last. On a tie it is the one whose box’s centre lies nearest, and then the
+one drawn first. Each element then starts and ends at its points nearest its neighbours
+(<code>REQ-GEN-003</code>).</li>
+</ol>
+<p><code>tests/auto_order.rs</code> checks rules 1 to 3 together on random designs of squares and lines, wherever the
+shapes fall.</p>
+<p>Elements with settings keep their order among themselves, and automatic elements move round them within
+the rules. The parts of a shape sewn as several elements, such as a line’s satin columns, keep their order
+too, so that a trim after the shape still comes after its last part. <code>--sort-colours</code> lets the elements
+with settings move as well (<code>REQ-AUTO-011</code>), whether or not <code>--auto</code> is given. It is for a design drawn in
+an order that suits drawing it rather than sewing it. The switch is the command line’s. VectorCraft’s
+exporters order the automatic elements when their <code>auto</code> option is on, and sew the elements with settings
+as drawn.
+An element with a stop after it keeps its place: the elements drawn before it sew before it, and those
+drawn after it after it. A user sets a stop for a reason, such as placing appliqué fabric, and it comes
+where it was drawn. <code>SC-I0907</code> says when the order isn’t paint order, with the thread changes of each, those
+inside the elements sewn in several threads among them.
+M10’s routing tools don’t start from this order. They route satin columns and running stitches drawn by
+hand as Ink/Stitch’s tools route them, and write the route into the document (<a href="routing.html#order">routing tools</a>).
+Each element that automatic digitizing makes sews its underlay just before its own top stitches. The
+rules leave <code>underlays_first</code> off (<a href="adr/0018-underlays-first-is-a-setting-of-each-element.html">ADR-0018</a>).</p>
+<p>Shapes are near when their boxes come within twice the shapes’ tolerance of each other. An automatic area’s
+box is round its region, and a narrow part’s line’s round the part. Any other shape’s box is round its
+path’s points, grown for a stroke by half its width times √(L² + 1) for a miter limit L. That holds the
+corners of a miter clipped at its limit, as a satin column’s rails clip it. Other strokes grow by half their
+width times √2, which holds a square cap’s corners. Rule 4 measures with the same boxes. The order finds a
+shape’s paint only when the shape is near an element that moves.</p>
+<p><strong>Work</strong> (<code>REQ-AUTO-012</code>). Each element has the work budget to itself to find how it lies beside the
+shapes drawn after it. It costs a unit for each of them, and the work of those near it. One that needs
+more keeps its place in paint order as an element with a stop after it does: nothing moves across it.
+An element after it that one before it frees still waits its turn after it, and each element sews once. A
+shape whose paint can’t be found within the budget keeps its place beside the shapes near it. Choosing the
+order has the budget once more, and costs a unit for each free element looked at each time an element is
+placed. An order that needs more sews the elements not placed by then in paint order, after the others.
+<code>SC-I0907</code> says each. <code>SC-I0904</code> says it of a satin column instead, whose area the areas sewn before it
+then don’t reach under either. A fill’s generator needs the work of its region too, and says it of a fill
+(<code>SC-E0004</code>).</p>
+<p><strong>Measured.</strong> The test pictures, sewn as drawn and digitized as <a href="#neighbours">Neighbours</a> sews them.</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Test picture</th><th>Thread changes as drawn</th><th>Digitized</th><th>Jumps as drawn</th><th>Digitized</th></tr>
+</thead>
+<tbody>
+<tr><td>Stripes, 3 abutting</td><td>2</td><td>2</td><td>3</td><td>3</td></tr>
+<tr><td>Badge, abutting</td><td>2</td><td>2</td><td>3</td><td>3</td></tr>
+<tr><td>Badge, stacked</td><td>2</td><td>2</td><td>3</td><td>3</td></tr>
+<tr><td>Badges in a row, abutting</td><td>8</td><td>2</td><td>9</td><td>7</td></tr>
+<tr><td>Badges in a row, stacked</td><td>8</td><td>2</td><td>9</td><td>7</td></tr>
+</tbody>
+</table>
+</div>
+<p>The stripes and the badge on its own have one shape of each colour, which no order sews with fewer
+changes, and digitizing keeps their order. The row of 3 badges, each 30 mm across, is drawn badge by badge,
+as Auto Grouping draws it. It changes thread 8 times as drawn. Digitized, each thread sews its 3 shapes one
+after another, and the row changes thread twice. Its red discs touch, and the needle sews on from one to
+the next without a jump. The row jumps 7 times instead of 9. <code>tests/auto_pictures.rs</code> keeps the numbers
+from falling back.</p>
+<p><strong>What shows</strong> (<code>REQ-AUTO-025</code>, <code>REQ-AUTO-026</code>). Digitized, a picture’s stitches should cover the fabric
+wherever it has a colour, and lay thread only where it has that thread’s colour.
+<code>stitchcraft_testkit::fabric</code> measures both on any design and its plan, a photo traced into shapes as well
+as a test picture. It paints the picture on a grid of 0.05 mm as a viewer paints it, each place in the
+colour of the last shape drawn over it, the background left out but where it shows inside the picture. Bare fabric is the part of the
+picture’s colours that the top stitches leave uncovered, each stitch’s thread 0.4 mm wide, opened with a
+disc as wide as the thread: a sliver narrower than a thread beside a running stitch closes as the thread
+spreads. A patch of 1 mm² or more, the smallest area that digitizing sews, fails. A top stitch is astray
+where it shows on another colour or on bare fabric for 1 mm or more, past the 0.4 mm that the overlap and
+pull compensation reach. An underlay or travel stitch is astray wherever it shows, and any stitch astray
+fails. The moves sewn on from one element to the next (<code>REQ-ASM-002</code>) and the jump threads that the PE800
+leaves are counted apart.</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Test picture, digitized</th><th style="text-align: right">Largest bare patch</th><th style="text-align: right">Longest stretch astray</th><th style="text-align: right">Moves astray</th><th style="text-align: right">Jump threads</th></tr>
+</thead>
+<tbody>
+<tr><td>Stripes, 3 abutting</td><td style="text-align: right">0</td><td style="text-align: right">0.10 mm</td><td style="text-align: right">0</td><td style="text-align: right">0</td></tr>
+<tr><td>Badge, abutting or stacked</td><td style="text-align: right">0</td><td style="text-align: right">0.35 mm</td><td style="text-align: right">0</td><td style="text-align: right">0</td></tr>
+<tr><td>Badges in a row, abutting or stacked</td><td style="text-align: right">0</td><td style="text-align: right">0.40 mm</td><td style="text-align: right">0</td><td style="text-align: right">4</td></tr>
+<tr><td>Emblem, abutting or stacked</td><td style="text-align: right">0</td><td style="text-align: right">0.35 mm</td><td style="text-align: right">0</td><td style="text-align: right">2</td></tr>
+<tr><td>Button, abutting or stacked</td><td style="text-align: right">0</td><td style="text-align: right">0.40 mm</td><td style="text-align: right">6</td><td style="text-align: right">0</td></tr>
+<tr><td>Traced pear</td><td style="text-align: right">0</td><td style="text-align: right">0.95 mm</td><td style="text-align: right">0</td><td style="text-align: right">4</td></tr>
+<tr><td>Traced dog on turf, 6 threads</td><td style="text-align: right">0.81 mm²</td><td style="text-align: right">1.55 mm</td><td style="text-align: right">6</td><td style="text-align: right">115</td></tr>
+<tr><td>Traced dog on turf, 9 threads</td><td style="text-align: right">0.92 mm²</td><td style="text-align: right">1.95 mm</td><td style="text-align: right">4</td><td style="text-align: right">131</td></tr>
+<tr><td>Traced running dog, 6 threads</td><td style="text-align: right">0.63 mm²</td><td style="text-align: right">0.78 mm</td><td style="text-align: right">3</td><td style="text-align: right">102</td></tr>
+<tr><td>Traced running dog, 9 threads</td><td style="text-align: right">0.61 mm²</td><td style="text-align: right">1.39 mm</td><td style="text-align: right">10</td><td style="text-align: right">117</td></tr>
+</tbody>
+</table>
+</div>
+<p>The button’s 7 dots sew on from one to the next, each move 2.7 mm long across its yellow. The pear’s olive
+and dark olive bands each sew a column at both ends, and each of their threads sews a side of the stem
+between those ends, so its 4 jump threads all run from the stem. <code>tests/auto_fabric.rs</code> keeps the moves and
+the jump threads as measured.</p>
+<p>The owner’s dog, traced from her 2 photos in 6 and in 9 threads (M13.15, <code>docs/fixtures/README.md</code> › The
+traced dogs), still lays 3 stitches astray, one in each of 3 of the traced dogs. 2 are satin stitches that
+fan round a shape biting into their column’s side and cross it. The third is the straight move, 2.25 mm
+long, between 2 lines of one narrow part, which is a stitch because it is shorter than the collapse length. <code>tests/auto_photos.rs</code> lists each, with where it lies and why, and its
+case fails on any other stitch astray and on any listed one that no longer is. M13.16 of the
+<a href="../plan/roadmap.html">roadmap</a> removes them. The dogs’ moves astray are moves from one element to the next,
+as the button’s are. Their jump threads, 102 to 131, are the design’s limit as it stands: each thread sews
+its shapes one after another and jumps between those that don’t touch, and the PE800 cuts no jump. M13.17
+runs the thread under the shapes sewn later instead, which cover it. Each dog takes
+too long to digitize and measure in the tests’ debug build, so CI’s <code>perf</code> job runs these cases in the
+release build (<a href="conformance.html#cases-in-the-release-build">conformance</a>). The pieces of the dogs that
+showed fabric before the rules above, the paw of the dog on turf and the running dog’s ear, are cases of
+<code>tests/auto_fabric.rs</code> too.</p>
+<h2 id="settings"><a class="header" href="#settings">Settings</a></h2>
+<p>The rules’ values are StitchCraft’s own parameters, registered as any other
+(<a href="params.html">parameter registry</a>, <a href="../user/reference/params/auto.html">reference</a>), since M13.7
+(<code>REQ-AUTO-020</code>). Each rule goes by the settings of the shape it digitizes (<code>stitchcraft_engine::auto::AutoParams</code>):</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Setting</th><th>Key</th><th>Default</th><th>Rules</th></tr>
+</thead>
+<tbody>
+<tr><td>Widest satin column</td><td><code>auto_max_satin_width_mm</code></td><td>7 mm</td><td>a line’s stitches, a part’s columns, the split of a part into broad and narrow parts, an area digitized whole under its details</td></tr>
+<tr><td>Narrowest triple run</td><td><code>auto_min_triple_run_width_mm</code></td><td>0.5 mm</td><td>a running stitch tripled</td></tr>
+<tr><td>Overlap</td><td><code>auto_overlap_mm</code></td><td>0.4 mm</td><td>an area reaching under its neighbours and cut away under them, a satin column’s pull compensation</td></tr>
+<tr><td>Smallest area</td><td><code>auto_min_area_mm2</code></td><td>1 mm²</td><td>specks, the narrow parts too small to cut from a broad part, and what details may leave of a hole they fill</td></tr>
+<tr><td>Leave out the background</td><td><code>auto_ignore_background</code></td><td>on</td><td>the background, read of the lowest shape</td></tr>
+</tbody>
+</table>
+</div>
+<p>The defaults are the values on this page, and MC-8 confirms or changes them. A shape that sets none of the
+settings takes the defaults, and an automatic shape with a setting that doesn’t read sews nothing
+(<code>SC-E0101</code>). Each area reaches its own overlap under the shapes sewn after it, and its specks are its own
+parts smaller than its smallest area, wherever they go. The narrowest satin column is the design’s
+<code>min_satin_stroke_width_mm</code>, one value for the whole design, and the underlay of a column’s width (above)
+is no setting.</p>
+<p>An automatic element reads the settings before it is sewn as any stitch type, and the ordinary elements it
+becomes don’t (<a href="params.html#settings-of-automatic-digitizing">parameter registry</a>). They are in no stitch
+family’s dialog, and a shape that sets them is still automatic. VectorCraft’s Auto effect (M13.7) sets them
+from its dialog for the paths it is on and those inside the group it is on, and with <code>--auto</code> every other
+shape takes the defaults.</p>
+<h2 id="previews-in-vectorcraft"><a class="header" href="#previews-in-vectorcraft">Previews in VectorCraft</a></h2>
+<p>The Auto effect is a live effect like the plug-ins of each stitch family
+(<a href="vectorcraft-integration.html#plug-ins">plug-ins</a>). VectorCraft runs a group’s effects on each path inside
+it (<code>REQ-VC-006</code>), so the effect on a traced group previews every path’s stitches, each sewn as its width
+says. A live effect is given its path and its paints alone. Like <code>stitch export</code>, it reads the path as an
+area when a fill paints it, and as a line along its topmost stroke. Its preview shows each shape’s
+stitches without the overlaps, the merged specks or the order, which <code>stitch export</code> adds. VectorCraft
+draws what a live effect returns with every paint of its object. The stitches come back as ribbons that
+the fill fills when a fill paints the object, and as lines that its stroke draws otherwise.</p>
+<p>Digitizing is most of a preview’s work, from about 1,450 instructions a unit to 2,260 in VectorCraft
+0.18.0’s host, and a live effect has 50 million (<a href="vectorcraft-integration.html#live-effect-previews-within-v1-budgets">live-effect previews</a>).
+A square’s takes 12,900 units, an L’s 21,000 and a ring’s 31,800. The auto level digitizes within eight
+tenths of the budget, then shows each element made as auto shows its family’s: a fill’s top rows, and a
+satin column’s and a running stitch’s every stitch. When that costs too much it shows the outline, as a
+larger square, an L, a ring and most traced letters do. Exact shows every stitch, and outline the path,
+hatched across a fill. A preview that costs more than the level allows shows less, with <code>SC-I0810</code>, as the
+other effects’ previews do. The command line’s preview always shows every stitch.</p>
+<p>Tracing again replaces the group with a new one, without the effect. Apply the effect after the last
+trace, or use <code>--auto</code>, which works without it.</p>
+<h2 id="with-vectorcrafts-newer-plug-in-features"><a class="header" href="#with-vectorcrafts-newer-plug-in-features">With VectorCraft’s newer plug-in features</a></h2>
+<ul>
+<li><strong>Exporters</strong> (0.14, <a href="rfc-vectorcraft-abi-v2.html#p1-exporter-plug-ins">P1</a>). File › Export › Export As › PES
+plans the document inside VectorCraft, and its <code>auto</code> option digitizes the objects without effects
+(M6.9). The flow is then trace and export, both in VectorCraft.</li>
+<li><strong>Effects in filter objects</strong> (0.15, <a href="rfc-vectorcraft-abi-v2.html#p8-effects-and-stroke-style-in-filter-objects">P8</a>).
+A filter could set on each path the effect of the family its width chose. The user then adjusts it in
+that effect’s dialog.</li>
+<li><strong>Budget classes</strong> (<a href="rfc-vectorcraft-abi-v2.html#p4-budget-classes-for-live-effects">P4</a>, still proposed for
+live effects). The Auto effect’s previews of large shapes would get the heavy budget.</li>
+</ul>
+<h2 id="text-in-pictures"><a class="header" href="#text-in-pictures">Text in pictures</a></h2>
+<p>Text traced from a picture is shapes, and the width rules sew its letters’ strokes as satin columns and
+running stitches. TS-13 sews block letters from 4 to 15 mm tall to find the smallest that reads well.
+Smaller letters need lettering in an embroidery font, made to sew at small sizes. M14.5 replaces the
+traced letters inside a marked area with lettering of the marker’s text, as tall as they were. Spike M14.6
+looks for a way to find and read the text without a marker.</p>
+<h2 id="pictures-from-the-command-line"><a class="header" href="#pictures-from-the-command-line">Pictures from the command line</a></h2>
+<p><code>stitch plan picture.png</code> and <code>stitch export picture.png</code> trace the picture with VectorCraft’s command line,
+as spike M13.9 decided (<a href="adr/0015-pictures-traced-by-vectorcraft.html">ADR-0015</a>) and M13.10 built
+(<code>REQ-CLI-012</code>, <code>REQ-CLI-013</code>). A design whose extension is <code>.png</code>, <code>.jpg</code> or <code>.jpeg</code>, in any case, is a
+picture. VectorCraft publishes <code>vectorcraft-cli</code> with each release, and <code>stitch</code> runs the one
+<code>--vectorcraft-cli</code> names, or else the one on the <code>PATH</code>:</p>
+<pre><code class="language-sh">vectorcraft-cli run --commands - --export FOLDER/traced.vectorcraft
+</code></pre>
+<p>It gives it 4 steps on standard input, where a picture of any size fits. They are the compatibility gate’s
+<code>trace</code> case’s:</p>
+<ol>
+<li><code>swatch.library.load</code> loads the threads <code>stitch palette</code> writes for the machine as a swatch library.</li>
+<li><code>file.place</code> places the picture’s bytes, fitted inside a square <code>--size</code> millimetres across, or else
+inside the machine’s hoop 0.5 mm in from each side, its aspect kept.</li>
+<li><code>imageTrace.make</code> traces it in colour with the library’s colours as they are, at most <code>--colours</code> of
+them, by the Abutting method, so that the shapes share their edges.</li>
+<li><code>imageTrace.expand</code> keeps the paths, without the picture.</li>
+</ol>
+<p>VectorCraft saves the document into a folder of the command’s own beside the machine file, named as
+<code>stitch</code>’s temporary files are, and the folder is removed once the document is read. It runs with
+<code>VECTORCRAFT_NO_PREFS</code> set, so that it neither reads nor writes the user’s VectorCraft preferences, and a
+picture traces the same for everyone. The document is then the design. It is read with <code>--auto</code>, planned for
+the machine <code>--profile</code> names or else the reference machine, and named after the picture. <code>--traced</code> writes
+it beside the machine file, to correct the trace in VectorCraft. A bug-report bundle keeps it too, so that a
+replay doesn’t need VectorCraft.</p>
+<p><strong>The picture’s size.</strong> VectorCraft places a picture at its own resolution, or 72 pixels to the inch when
+its file says none, so a logo a few hundred pixels across would sew larger than any hoop. <code>stitch</code> fits the
+picture into the machine’s hoop unless <code>--size</code> gives the length of its longer side. The size is the
+picture’s, its background included, and the shapes left once the background is out sew smaller. Fitted to
+the hoop, the picture keeps 0.5 mm from each side: a shape along its edge sews as a satin column, whose
+stitches reach 0.4 mm past its rails, its pull compensation, from rails that may lie up to the tolerance
+shapes meet within outside the shape. Fitted to the hoop itself, a picture whose shapes reach its sides
+would sew past the hoop, which <code>SC-E0701</code> refuses.</p>
+<p><strong>How many colours.</strong> Image Trace keeps at most <code>--colours</code> of the library’s colours, 6 unless it says
+otherwise, as in its own panel. The count takes in the background’s colour. A picture with smooth edges, or a
+JPEG file, has colours between its shapes’ colours, which may trace as threads of their own. A <code>--colours</code>
+equal to the number of colours the picture has keeps them out. A badge in 3 colours on white traces in 4.</p>
+<p><strong>When VectorCraft can’t trace.</strong> A command line that can’t be started, missing from the <code>PATH</code> or from
+the path named, is <code>SC-E0815</code>, which says how to install it, or to trace the picture in VectorCraft. One
+that fails or doesn’t save the document is <code>SC-E0816</code>, which ends with what it said. Then nothing is written but
+the report.</p>
+<p>StitchCraft traces nothing itself. A tracer of its own would repeat VectorCraft’s, which a harness
+measures. It would also trace a picture otherwise than VectorCraft does, and the command line would then
+sew it unlike the tutorial’s flow.</p>
+<h2 id="subject-cut-out"><a class="header" href="#subject-cut-out">Subject cut-out</a></h2>
+<p>A photo’s background traces into shapes of its own, such as turf, a fence or tyres behind a dog. The
+background rule leaves out one shape, the lowest, when it lies behind everything (<a href="#neighbours">Neighbours</a>).
+So <code>--subject</code> cuts a picture’s subject out before VectorCraft traces it, as spike M13.13 decided
+(<a href="adr/0019-subject-cut-out-before-tracing.html">ADR-0019</a>) and M13.14 is to build (<code>REQ-CLI-014</code> to
+<code>REQ-CLI-019</code>, planned). It is off by default, and a picture given without it is traced as
+<a href="#pictures-from-the-command-line">above</a>.</p>
+<p><strong>The steps.</strong> With <code>--subject</code>, <code>stitch</code> changes the picture before the 4 steps VectorCraft takes:</p>
+<ol>
+<li>It decodes the picture as its file stores the pixels, with the <code>image</code> crate, as VectorCraft decodes it.</li>
+<li>It finds the subject’s box. <code>--subject-box X0,Y0,X1,Y1</code> gives it in the picture’s pixels. Otherwise
+U²-Net-p maps how likely each pixel is to belong to the main subject, at 320 × 320 px. The box is the
+one round the piece of the map above a half with the most of the map in it, scaled back to the picture.</li>
+<li>MobileSAM cuts the subject out of the box. Its encoder takes the picture once, its longer side at
+1,024 px and the rest padded to a square. Its decoder takes the box’s 2 corners and the points of
+<code>--subject-point</code> and <code>--not-subject</code>, and gives a map of 256 × 256 values. Scaled to the picture and
+put through the logistic function, the map is each pixel’s alpha, 0 to 255.</li>
+<li>The picture with that alpha, cropped to the box round the pixels of an alpha of 128 or more, is written
+as a PNG file. <code>file.place</code> places it where it would place the picture, so <code>--size</code> and the hoop fit
+the subject.</li>
+</ol>
+<p>Image Trace leaves out the pixels whose alpha is under 128, and gives a pixel on the cut edge the colour
+beside it (VectorCraft’s <code>crates/trace</code> at <code>3f8d7a0</code>). The trace then contains the subject alone, with no
+background for the background rule to find. If MobileSAM keeps none of the pixels, or if U²-Net-p’s map has
+no piece above a half and no box is given, a coded error says so and suggests <code>--subject-box</code>. <code>stitch</code>
+then writes the report alone, as when VectorCraft can’t trace.</p>
+<p><strong>Correcting a cut-out.</strong> A cut-out is wrong when the box contains more than the subject and MobileSAM keeps
+it, or when MobileSAM keeps less than the subject. <code>--not-subject X,Y</code> marks a point of what isn’t the
+subject, and <code>--subject-point X,Y</code> a point of what is, each as often as needed and in the picture’s pixels.
+The decoder takes the points with the box, U²-Net-p’s when the user gives none, since a point without a box
+can lose much of the subject. <code>--cutout FILE</code> writes the cut-out beside the machine file, with the other
+files asked for, all or none, so that the user can see what was kept.</p>
+<p><strong>In VectorCraft.</strong> A filter can’t read or replace a placed image, and a plug-in couldn’t run the models
+within its budget (ADR-0019, decision 2). <code>stitch cutout PICTURE -o FILE</code> writes the cut-out alone, with
+the same options. The user places it where they would place the photo, and traces it with Image Trace as
+the tutorial does. A picture whose background another program made transparent traces as its subject too,
+without <code>--subject</code>. The owner’s traced dogs were made so (M13.15, <code>docs/fixtures/README.md</code> › The traced
+dogs).</p>
+<p><strong>The models</strong> are 3 ONNX files, 49.1 MB together, which tract runs in <code>stitchcraft-cutout</code>, a crate of the
+apps’ layer that only <code>stitch</code> depends on:</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>File</th><th>Model</th><th>Its weights’ licence</th><th style="text-align: right">Size</th></tr>
+</thead>
+<tbody>
+<tr><td><code>u2netp.onnx</code></td><td><a href="https://github.com/xuebinqin/U-2-Net">U²-Net-p</a>, 1.1 million parameters</td><td>Apache-2.0</td><td style="text-align: right">4.6 MB</td></tr>
+<tr><td><code>mobilesam-encoder.onnx</code></td><td><a href="https://github.com/ChaoningZhang/MobileSAM">MobileSAM</a>’s encoder, 5.7 million parameters</td><td>Apache-2.0</td><td style="text-align: right">28.0 MB</td></tr>
+<tr><td><code>mobilesam-decoder.onnx</code></td><td>MobileSAM’s decoder, 4.1 million parameters</td><td>Apache-2.0</td><td style="text-align: right">16.5 MB</td></tr>
+</tbody>
+</table>
+</div>
+<p>The repository pins each file’s address, size and SHA-256, and none of the files is committed. A script kept
+beside the pins exports them from the authors’ checkpoints, and a StitchCraft release publishes them as
+assets. <code>stitch</code> fetches them with curl on first use into the folder <code>STITCHCRAFT_MODELS</code> names, or else
+<code>stitchcraft/models</code> in the user’s cache folder, which <code>cargo xtask corpus</code> uses for the fonts too. It
+checks each file’s SHA-256 before it uses the file. When a file can’t be fetched or its sum differs, a coded
+error names each file’s address, size and SHA-256 and the folder it belongs in, and <code>stitch</code> writes the
+report alone. NOTICE names the models and their licences.</p>
+<p><strong>Replays.</strong> The models run in <code>stitch</code> alone, and their results may differ in their last bits from one
+processor to another. A bug-report bundle of a picture already contains the document VectorCraft traced.
+With <code>--subject</code> it also records the models’ SHA-256 sums, the box and the points, and leaves the picture
+out. Its replay runs without the models and without VectorCraft.</p>
+<p><strong>Measured.</strong> The cut-out was measured on the owner’s 2 photos of her dog, against masks checked by eye
+(<a href="adr/0019-subject-cut-out-before-tracing.html">ADR-0019</a>). The cut-out from U²-Net-p’s box kept the dog at an intersection over union (IoU) of 0.985 on turf and 0.988
+running. It kept 0.2 % and 0.3 % of the dog’s area wrongly and lost 1.3 % and 0.9 % of it. U²-Net-p alone
+kept the tyre behind the running dog, 19.8 % of the dog’s area. On the 2.1 GHz Xeon of the
+<a href="tdd.html">technical design</a>, with one thread, onnxruntime took 0.5 s for U²-Net-p, 1.6 s for MobileSAM’s
+encoder and 0.1 s for its decoder. tract took 1.0 to 1.2 s, 2.5 to 2.9 s and 0.15 to 0.23 s. In Rust, with
+tract, the whole cut-out of a photo took 5.1 to 5.4 s and 343 MB at most.</p>
+<p><strong>Cases</strong> (M13.14). The 2 photos are committed as prepared, 1,200 px wide, with a mask of each checked by
+hand, and recorded in <code>conformance/fixtures/README.md</code>. The owner took them of her own dog and gave them
+under the MIT licence. The models’ outputs for them are fixtures too, U²-Net-p’s map and MobileSAM’s map of
+each prompt. The cases of the box, the marks, the alpha, the crop and the file run on those fixtures without
+the models. Pictures drawn in code, a disc on a striped ground with a square that touches it, have exact
+masks, and test the marks. A job of its own fetches the models and runs them on the photos and the drawn
+pictures. It compares their maps with the fixtures, and each cut-out with its mask, which it must match at
+an IoU of 0.97 or more, with at most 2 % of the subject’s area kept wrongly and 3 % lost.</p>
+<h2 id="testing"><a class="header" href="#testing">Testing</a></h2>
+<ul>
+<li>
+<p>Each rule gets its requirements and failing cases before its code (<a href="adr/0008-conformance-first.html">ADR-0008</a>).</p>
+</li>
+<li>
+<p>The test pictures are drawn in code, as the test sheets are (<code>stitchcraft_engine::testsheets::pictures</code>),
+and no logo or picture of anyone else’s is used. From M13.15 the owner’s dog, cut out of her 2 photos
+and traced, is a test picture too (<a href="#sewing-order">sewing order</a>), and from M13.14 the subject cut-out’s
+cases use the photos (<a href="#subject-cut-out">above</a>).</p>
+</li>
+<li>
+<p>Each test picture’s automatic plan is compared with its plan in paint order: colour changes, jumps,
+trims, stitches, and how much of each shape and of each shared edge the stitches cover
+(<code>stitchcraft_testkit::metrics</code>). The cases measure the pictures where <code>stitchcraft_testkit::pictures</code>
+places them.</p>
+</li>
+<li>
+<p>Level B of the <a href="compatibility-gate.html">compatibility gate</a> has a case, <code>trace</code>, in which VectorCraft’s
+command line traces a picture drawn in the threads <code>stitch palette</code> writes, and StitchCraft sews the
+document it saved, on every track. In its case <code>picture</code>, <code>stitch plan</code> traces the picture itself.</p>
+</li>
+<li>
+<p><code>stitch plan</code>’s own tests run it with a stand-in for VectorCraft’s command line, the test program itself,
+which saves a document VectorCraft 0.18.0 traced (<code>apps/stitchcraft-cli/tests/picture.rs</code>).</p>
+</li>
+<li>
+<p>TS-13 sews the test pictures at MC-8 (<a href="../plan/machine-testing.html">machine testing</a>), each twice. A
+sheet’s top half is digitized automatically, and its bottom half is sewn as drawn, in paint order. The
+bottom half sews first and stops, so that nothing digitized moves into it, and each half’s thread
+changes, jumps and time can be read. TS-13A sews the pictures of neighbours and sewing order, TS-13B
+block letters and lines traced as areas, TS-13C a face drawn with lines and shapes in parts, and TS-13D
+the emblem and the button, each traced abutting and stacked
+(<a href="../user/reference/test-sheets.html">test sheets</a>). TS-13D sews the emblem 42 mm wide, at 0.7 times its
+size. There the white round each star is narrower than a satin column, and sews as a column round the
+star, while the navy is one fill under the disc and the bars. The PE800 cuts no jump, and the sew-out
+reports where a shape sews down the thread of a jump before it.</p>
+</li>
+<li>
+<p><code>tests/auto_fabric.rs</code> measures what each test picture and the traced pear of the user pages leave bare
+and lay astray, digitized (<a href="#sewing-order">Sewing order</a>). The pear is read from
+<code>docs/fixtures/traced-pear.vectorcraft</code>, a photo that VectorCraft traced, with the ragged edges a trace
+has.</p>
+</li>
+<li>
+<p><code>tests/auto_sheets.rs</code> answers the TS-13 checks that the sheets’ own stitches can, moved to where each sheet
+draws its shapes (<code>stitchcraft_testkit::pictures::sheet</code>). Where the bar runs on beside the square, each
+ends its rows at its own edge. The specks sew as the disc, and no shape sews over one drawn over it. A line
+traced as an area runs to within its width of its ends, and its branch from the line it meets. The smile’s
+column ends where its round caps end, the columns’ rungs lie within 10° of square to their strokes, and the
+face’s columns cover the edges of the areas under them. The sew-out shows what only the machine can: whether
+fabric or a ridge shows once the thread pulls in, and how small a word still reads.</p>
+</li>
+<li>
+<p>The same cases count the jump threads each half leaves on the PE800, snipped at each thread change and
+stop, and how many a later stitch of their colour sews down (<code>stitchcraft_testkit::stitches</code>). Digitized,
+the letters sew as columns with a jump between each 2:</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Sheet</th><th style="text-align: right">As drawn: jump threads</th><th style="text-align: right">sewn down</th><th style="text-align: right">Digitized: jump threads</th><th style="text-align: right">sewn down</th></tr>
+</thead>
+<tbody>
+<tr><td>TS-13A</td><td style="text-align: right">8</td><td style="text-align: right">0</td><td style="text-align: right">12</td><td style="text-align: right">4</td></tr>
+<tr><td>TS-13B</td><td style="text-align: right">6</td><td style="text-align: right">0</td><td style="text-align: right">37</td><td style="text-align: right">16</td></tr>
+<tr><td>TS-13C</td><td style="text-align: right">9</td><td style="text-align: right">4</td><td style="text-align: right">6</td><td style="text-align: right">1</td></tr>
+<tr><td>TS-13D</td><td style="text-align: right">1</td><td style="text-align: right">0</td><td style="text-align: right">10</td><td style="text-align: right">3</td></tr>
+</tbody>
+</table>
+</div>
+</li>
+<li>
+<p>Ink/Stitch sews the TS-13 sheets too, every night (<a href="conformance.html#l3--inkstitch-differential-nightly">conformance</a>,
+<code>REQ-AUTO-021</code>). Ink/Stitch can’t choose a picture’s stitches, but it can sew what StitchCraft chose:
+the elements StitchCraft sews a sheet with, written as an SVG file with their parameters. Its machine
+files then agree with StitchCraft’s by every measure of the differential. Their thread footprints overlap
+StitchCraft’s by 0.97 or more. StitchCraft sews 6 to 10 % fewer stitches, as it leaves out stitches
+shorter than the machine’s shortest (<code>DEV-FIN-001</code>): fitted to the machine as StitchCraft fits its own
+plans, Ink/Stitch’s files come within about 1 % of StitchCraft’s stitches. Ink/Stitch’s extra trims and
+jumps are jumps that go nowhere at thread changes, which a StitchCraft PES file has no record of
+(<code>DEV-FMT-001</code>), and without them the trims and jumps agree within 1.</p>
+</li>
+<li>
+<p>A wrong choice sews alike in both programs. So, every night too, the lines of each shape sewn wholly as
+running stitches are compared with the lines Ink/Stitch’s Fill to Stroke draws for it (<code>REQ-AUTO-022</code>).
+The shapes are TS-13B’s word 4 mm tall and its windows’ lines, and the letters T, H and E from 3 to 10 mm
+tall in lines from 0.3 to 0.9 mm wide. Each branch Ink/Stitch finds has one of StitchCraft’s, and away
+from their ends the lines lie within 0.15 of a width of each other.</p>
+</li>
+</ul>
+<p>Codes 0900 to 0999 are automatic digitizing’s (<a href="diagnostics.html">diagnostics</a>).</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../design/routing.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                            </a>
+
+                            <a rel="next prefetch" href="../design/fonts.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../design/routing.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                    </a>
+
+                    <a rel="next prefetch" href="../design/fonts.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                    </a>
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr-ef4e11c1.min.js"></script>
+        <script src="../mark-09e88c2c.min.js"></script>
+        <script src="../searcher-09f2665d.js"></script>
+
+        <script src="../clipboard-1626706a.min.js"></script>
+        <script src="../highlight-abc7f01d.js"></script>
+        <script src="../book-609e4cb8.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>
